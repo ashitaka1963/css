@@ -1,0 +1,134 @@
+﻿/* <system section="theme" selected="10328749687225937733"> */
+@import "https://blog.hatena.ne.jp/-/theme/10328749687225937733.css";
+/* </system> */
+
+/* =============================   リンク     ===================================== */
+li >a {
+  text-decoration: underline;
+}
+
+
+li > a:hover {
+  background: #cce7ff;
+}
+
+
+/* =============================   フォント     ===================================== */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+/* =============================   ブログカラー     ===================================== */
+/* メインカラー 500 */
+#blog-title, .entry-content h2, .entry-content ol li:before, .page-index .pager a:hover, .page-entry .pager .pager-prev::before, .page-entry .pager .pager-next::after, .hatena-module-title, .archive-heading
+{background-color:#1F2123;}
+
+.entry-content p a, .entry-content h3, .entry-content h4::before, .entry-content ul ul li::before, ul.table-of-contents:before, .page-index .pager a, .page-entry .pager span a, .urllist-item::before, .hatena-module-category .hatena-urllist li::before, .entry-content ul li::before
+{color:#1F2123;}
+
+.archive-heading::before, .entry-content h2::before
+{border-top-color:#1F2123;}
+
+.entry-content h3
+{border-left-color:#1F2123;}
+
+ul.table-of-contents, .page-index .pager a, .page-entry .pager span
+{border-color:#1F2123;}
+
+
+@media screen and (max-width: 480px){
+.entry-content h2
+{border-bottom:3px solid #1F2123;color:#1F2123;background-color:transparent;}
+}
+
+/* 濃い色 600 */
+#globalheader-container, .zeno-menu li a:hover
+{background:rgb(0, 0, 0);}
+/* #globalheader-container, .zeno-menu li a:hover
+{background:#1F2123;} */
+
+
+.entry-content p a:visited {color:#1F2123;}
+
+/* 薄い色 400 */
+.page-entry .pager span a:hover, #zeno-menu, .entry-content ol ol li:before
+{background:#1F2123;}
+
+
+/* ヘッダ横幅を広げる */
+#blog-title-inner{background-size:cover;}
+
+/* ヘッダ画像の高さ */
+#blog-title{
+ height:300px;
+}
+
+
+/* =============================   グローバルナビ     ===================================== */
+
+#nav{
+  background: #1F2123; /* ナビゲーションバー全体の背景色 */
+}
+
+#globalmenu{
+    width: 60%; /* ナビゲーションバークリック部分の背景色 */
+    margin: 0 auto 40px;
+    height: 50px; /* 高さ */
+    padding: 0;
+    list-style-type: none; /* リストのマーク非表示 */
+  }
+  #globalmenu li{
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 25%; /* 各liの幅*/
+    margin: 0;
+    padding: 0;
+  }
+  #globalmenu li a{
+    display: block;
+    margin: 0;
+    padding: 17px 0 20px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  #globalmenu li:hover > a{
+    background: rgb(10,98,12);/* ホバー時の背景色 */
+    color: #fff; /* ホバー時の文字色 */
+  }
+  #globalmenu li ul{
+    position: absolute;
+    top: 100%;
+    color: #fff;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index:10000;
+    width: 100%;
+  }
+  #globalmenu li ul li{
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    color: #fff;
+  }
+  #globalmenu li ul li:hover > a{
+    background: rgb(10,98,12);
+    color: #fff;
+  }
+  #globalmenu li:hover ul li{
+    overflow: hidden;
+    height: 40px;
+    border-bottom: 1px dotted #ffffff;
+  }
+  #globalmenu li ul li a{
+    font-size: 13px;
+    padding: 15px;
+    background: rgb(0, 0, 0);
+    text-align: left;
+  }
+

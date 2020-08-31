@@ -1,0 +1,98 @@
+// VScode側の設定
+// Code Block Theme：atom-material.css
+// Preview Theme：vue.css
+
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+.markdown-preview.markdown-preview {
+
+    // ======================== リンク ========================
+  a{
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+    text-decoration: none;
+    position: relative;
+    left: 1.0em;
+    margin-right: 1.4em;
+    // right: 1.5em;
+    color: #6DC1FF;/*文字色*/
+  }
+
+  a:before {
+    content: "\f0c1";
+    color: #6DC1FF;
+    font-family: Fontawesome;
+    margin-right: .4em;
+    position: absolute;
+    left: -1.2em;
+}
+
+  a:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #6DC1FF;
+    transition: .3s;
+    transform: translateX(-50%);
+  }
+
+  a:hover::after{
+    width: 100%;
+  }
+
+
+  // ======================== 見出し ========================
+  h1 {
+  font-size: 1.8em;
+  color: #224B8B;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #224B8B;/*上線*/
+  border-bottom: solid 3px #224B8B;/*下線*/
+}
+
+  h2 {
+    font-size: 1.6em;
+    padding: 0.3em;/*文字周りの余白*/
+    padding-left: 0.5em;
+    color: #224B8B;/*文字色*/
+    background: #c7def0;/*背景色*/
+    border-left: solid 5px #224B8B;/*左線（実線 太さ 色）*/
+  }
+
+  h3 {
+    font-size: 1.4em;
+    color: #494949;/*文字色*/
+    border-bottom: solid 3px #c7def0;
+}
+
+  h3:after {
+      position: absolute;
+      content: " ";
+      display: block;
+      border-bottom: solid 3px #224B8B;
+      // bottom: -3px;
+      width: 20%;
+  }
+  h4 {
+    font-size: 1.1em;
+    // padding: 0.2em;/*文字周りの余白*/
+    padding-left: 0.9em;
+    color: #494949;/*文字色*/
+    border-left: solid 5px #224B8B;/*左線（実線 太さ 色）*/
+  }
+
+
+  //  ``ブロック
+  code {
+    color: #ff8400;/*文字色*/
+    // background: #f3f3f3;
+  }
+}
+
+
